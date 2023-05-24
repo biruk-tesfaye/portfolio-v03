@@ -1,7 +1,7 @@
 <script>
 	// import 'https://cpwebassets.codepen.io/assets/embed/ei.js';
 
-	import Gradient from '$lib/assets/gradient.png';
+	import GradientImg from '$lib/assets/gradient.png';
 	import Docker from '$lib/assets/icons/docker.svg.svelte';
 	import Illustrator from '$lib/assets/icons/illustrator.svg.svelte';
 	import Nextjs from '$lib/assets/icons/nextjs.svg.svelte';
@@ -26,15 +26,15 @@
 	import BehanceSocial from '$lib/assets/icons/behance-social.svg.svelte';
 	import Gitlab from '$lib/assets/icons/gitlab.svg.svelte';
 
+	import Gradient from '$lib/components/gradient/gradient.svelte';
+
 	let y = 0;
 </script>
 
 <svelte:window bind:scrollY={y} />
 
 <div class="h-[1024px] w-full absolute top-0 left-0 -z-10">
-	<div class="h-[1024px] w-full overflow-hidden absolute top-0 left-0">
-		<img src={Gradient} alt="gradient" class="object-cover transform scale-150" />
-	</div>
+	<Gradient />
 	<div>
 		<div class="h-[314px] w-[148px] absolute top-0 right-[466px] bg-[#F4FFF2]" />
 		<div class="h-[682px] w-[148px] absolute top-0 right-[233px] bg-[#F4FFF2]" />
@@ -251,15 +251,22 @@
 
 <!-- footer -->
 
-<div class="h-[1024px] w-full relative">
+<div class="relative w-screen min-h-[1024px] overflow-hidden">
+	<Gradient />
+	<div class=" w-full h-[1024px] flex justify-center items-center">
+		<p class="text-base">Designed on Figma Assembled in VS-Code with Sveltekit and tailwindcss</p>
+	</div>
+</div>
+
+<!-- <div class="h-[1024px] w-full relative">
 	<div class="h-[1024px] w-full overflow-hidden absolute top-0 left-0 -z-10">
-		<img src={Gradient} alt="gradient" class="object-cover transform scale-150" />
+		<img src={GradientImg} alt="gradient" class="object-cover transform scale-150" />
 	</div>
 
 	<div class="w-full h-full flex justify-center items-center">
 		<p class="text-base">Designed on Figma Assembled in VS-Code with Sveltekit and tailwindcss</p>
 	</div>
-</div>
+</div> -->
 
 <style>
 	/* Hide scrollbar for Chrome, Safari and Opera */
