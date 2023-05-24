@@ -18,6 +18,14 @@
 	import LogoCollection from '$lib/assets/logo-collection.png';
 	import Biking from '$lib/assets/biking.png';
 
+	import Github from '$lib/assets/icons/github.svg.svelte';
+	import Twitter from '$lib/assets/icons/twitter.svg.svelte';
+	import Linkedin from '$lib/assets/icons/linkedin.svg.svelte';
+	import Instagram from '$lib/assets/icons/instagram.svg.svelte';
+	import Codepen from '$lib/assets/icons/codepen.svg.svelte';
+	import BehanceSocial from '$lib/assets/icons/behance-social.svg.svelte';
+	import Gitlab from '$lib/assets/icons/gitlab.svg.svelte';
+
 	let y = 0;
 </script>
 
@@ -229,6 +237,28 @@
 	<h3 class="text-base font-light">
 		Where to find me <span class="bg-[#CDF4EC]">online</span>
 	</h3>
+
+	<div class="pt-6 flex flex-wrap gap-4">
+		<Gitlab />
+		<Github />
+		<BehanceSocial />
+		<Codepen />
+		<Linkedin />
+		<Instagram />
+		<Twitter />
+	</div>
+</div>
+
+<!-- footer -->
+
+<div class="h-[1024px] w-full relative">
+	<div class="h-[1024px] w-full overflow-hidden absolute top-0 left-0 -z-10">
+		<img src={Gradient} alt="gradient" class="object-cover transform scale-150" />
+	</div>
+
+	<div class="w-full h-full flex justify-center items-center">
+		<p class="text-base">Designed on Figma Assembled in VS-Code with Sveltekit and tailwindcss</p>
+	</div>
 </div>
 
 <style>
