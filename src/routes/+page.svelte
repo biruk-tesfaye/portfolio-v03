@@ -1,4 +1,6 @@
 <script>
+	// import 'https://cpwebassets.codepen.io/assets/embed/ei.js';
+
 	import Gradient from '$lib/assets/gradient.png';
 	import Docker from '$lib/assets/icons/docker.svg.svelte';
 	import Illustrator from '$lib/assets/icons/illustrator.svg.svelte';
@@ -7,6 +9,14 @@
 	import Svelte from '$lib/assets/icons/svelte.svg.svelte';
 	import Tailwindcss from '$lib/assets/icons/tailwindcss.svg.svelte';
 	import Typescript from '$lib/assets/icons/typescript.svg.svelte';
+
+	import PlaySquare from '$lib/assets/icons/play-square.svg.svelte';
+	import Behance from '$lib/assets/icons/behance.svg.svelte';
+	import Strava from '$lib/assets/icons/strava.svg.svelte';
+
+	import GugutLogo from '$lib/assets/gugut-logo.png';
+	import LogoCollection from '$lib/assets/logo-collection.png';
+	import Biking from '$lib/assets/biking.png';
 
 	let y = 0;
 </script>
@@ -69,3 +79,167 @@
 		<Illustrator class="w-16 h-16" />
 	</div>
 </div>
+
+<!-- Blog section -->
+
+<div class="pl-24 mt-36">
+	<h2 class="font-semibold text-xl">Blog / Stories</h2>
+	<h3 class="text-base font-light">
+		Sharing stories and the <span class="bg-[#CDF4EC]">WEB</span>
+	</h3>
+
+	<div class="pt-16 pb-28">
+		<div class="flex gap-16">
+			<div class="w-[352px] h-[324px] shadow-blog-card" />
+			<div class="w-[352px] h-[324px] shadow-blog-card" />
+			<div class="w-[352px] h-[324px] shadow-blog-card" />
+		</div>
+	</div>
+</div>
+
+<!-- interest and hobbies -->
+
+<div class="pl-24 mt-36 pb-28">
+	<h2 class="font-semibold text-xl mt-6">Interests / Hobbies</h2>
+	<h3 class="text-base font-light">
+		Things i do, when I’m not <span class="bg-[#CDF4EC]">coding</span>
+	</h3>
+
+	<div class="pt-16 pb-28">
+		<div class="flex gap-16">
+			<!-- Gugut Podcast -->
+			<div class="w-[352px] flex flex-col gap-6">
+				<img
+					class="shadow-blog-card"
+					src={GugutLogo}
+					alt="Gugut podcast logo"
+					width="352"
+					height="324"
+				/>
+				<div class="">
+					<div>
+						<h2 class="font-semibold text-xl mb-2">Gugut Podcast</h2>
+						<h3 class="text-base font-light">Producer and director</h3>
+					</div>
+					<div class="flex mt-6">
+						<span class="bg-[#CDF4EC] text-xl mr-1">Play.</span>
+						<PlaySquare />
+					</div>
+				</div>
+			</div>
+
+			<!-- Logo Collection -->
+			<div class="w-[352px] flex flex-col gap-6">
+				<img
+					class="shadow-blog-card"
+					src={LogoCollection}
+					alt="Gugut podcast logo"
+					width="352"
+					height="486"
+				/>
+				<div class="">
+					<div>
+						<h2 class="font-semibold text-xl mb-2">Logo Designing</h2>
+						<h3 class="text-base font-light">I like to create logo from concepts</h3>
+					</div>
+					<div class="flex mt-6">
+						<span class="bg-[#CDF4EC] text-xl mr-1">Browse.</span>
+						<Behance />
+					</div>
+				</div>
+			</div>
+
+			<!-- Biking -->
+			<div class="w-[352px] flex flex-col gap-6">
+				<img
+					class="shadow-blog-card"
+					src={Biking}
+					alt="Gugut podcast logo"
+					width="352"
+					height="648"
+				/>
+				<div class="">
+					<div>
+						<h2 class="font-semibold text-xl mb-2">Logo Designing</h2>
+						<h3 class="text-base font-light">I like to create logo from concepts</h3>
+					</div>
+					<div class="flex mt-6">
+						<span class="bg-[#CDF4EC] text-xl mr-1">Strava.</span>
+						<Strava />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Experimental area -->
+
+<div class="pl-24 pt-6">
+	<h2 class="font-semibold text-xl mt-6">Experiments / Playground</h2>
+	<h3 class="text-base font-light">
+		Trying new and experimental <span class="bg-[#CDF4EC]">things</span>
+	</h3>
+
+	<div class="pt-16 px-8">
+		<div class="pb-8 flex snap-x overflow-x-scroll gap-32 container-snap">
+			<iframe
+				class="min-w-[900px] snap-start relative text-center"
+				height="452"
+				scrolling="no"
+				title="card &amp; color chooser with hover"
+				src="https://codepen.io/biruktesfayeve/embed/bmwWbx?default-tab=result&theme-id=dark"
+				frameborder="no"
+				loading="lazy"
+				allowtransparency={true}
+				allowfullscreen={true}
+			>
+				See the Pen <a href="https://codepen.io/biruktesfayeve/pen/bmwWbx">
+					card &amp; color chooser with hover</a
+				>
+				by Biruk Tesfaye (<a href="https://codepen.io/biruktesfayeve">@biruktesfayeve</a>) on
+				<a href="https://codepen.io">CodePen</a>.
+			</iframe>
+
+			<iframe
+				class="min-w-[900px]"
+				height="452"
+				scrolling="no"
+				title="Envelope : send a package to your customers 😋😜"
+				src="https://codepen.io/biruktesfayeve/embed/JwQYVd?default-tab=result&theme-id=dark"
+				frameborder="no"
+				loading="lazy"
+				allowtransparency={true}
+				allowfullscreen={true}
+			>
+				See the Pen <a href="https://codepen.io/biruktesfayeve/pen/JwQYVd">
+					Envelope : send a package to your customers 😋😜</a
+				>
+				by Biruk Tesfaye (<a href="https://codepen.io/biruktesfayeve">@biruktesfayeve</a>) on
+				<a href="https://codepen.io">CodePen</a>.
+			</iframe>
+		</div>
+	</div>
+</div>
+
+<!-- Social links -->
+
+<div class="pl-24 mt-64">
+	<h2 class="font-semibold text-xl mt-6">Links / Social</h2>
+	<h3 class="text-base font-light">
+		Where to find me <span class="bg-[#CDF4EC]">online</span>
+	</h3>
+</div>
+
+<style>
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	.container-snap::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.container-snap {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+</style>
