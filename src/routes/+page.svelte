@@ -27,6 +27,7 @@
 	import Gitlab from '$lib/assets/icons/gitlab.svg.svelte';
 
 	import Gradient from '$lib/components/gradient/gradient.svelte';
+	import Stair from '$lib/components/stair.svelte';
 
 	let y = 0;
 </script>
@@ -35,11 +36,8 @@
 
 <div class="h-[1024px] w-full absolute top-0 left-0 -z-10">
 	<Gradient />
-	<div>
-		<div class="h-[314px] w-[148px] absolute top-0 right-[466px] bg-[#F4FFF2]" />
-		<div class="h-[682px] w-[148px] absolute top-0 right-[233px] bg-[#F4FFF2]" />
-		<div class="h-[1024px] w-[148px] absolute top-0 right-0 bg-[#F4FFF2]" />
-	</div>
+
+	<Stair />
 </div>
 
 <div class="h-[1024px] w-full max-w-7xl relative pl-24 pt-44 flex flex-col justify-between">
