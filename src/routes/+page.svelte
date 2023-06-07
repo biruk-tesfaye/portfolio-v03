@@ -1,7 +1,4 @@
 <script>
-	// import 'https://cpwebassets.codepen.io/assets/embed/ei.js';
-
-	import GradientImg from '$lib/assets/gradient.png';
 	import Docker from '$lib/assets/icons/docker.svg.svelte';
 	import Illustrator from '$lib/assets/icons/illustrator.svg.svelte';
 	import Nextjs from '$lib/assets/icons/nextjs.svg.svelte';
@@ -269,22 +266,12 @@
 
 <!-- footer -->
 
-<div class="relative max-w-full min-h-[1024px] overflow-hidden">
+<div class=" max-w-full h-[1024px]">
 	<Gradient />
 	<div class=" w-full h-[1024px] flex justify-center items-center px-8">
 		<p class="text-base">Designed on Figma Assembled in VS-Code with Sveltekit and tailwindcss</p>
 	</div>
 </div>
-
-<!-- <div class="h-[1024px] w-full relative">
-	<div class="h-[1024px] w-full overflow-hidden absolute top-0 left-0 -z-10">
-		<img src={GradientImg} alt="gradient" class="object-cover transform scale-150" />
-	</div>
-
-	<div class="w-full h-full flex justify-center items-center">
-		<p class="text-base">Designed on Figma Assembled in VS-Code with Sveltekit and tailwindcss</p>
-	</div>
-</div> -->
 
 <style>
 	/* Hide scrollbar for Chrome, Safari and Opera */
