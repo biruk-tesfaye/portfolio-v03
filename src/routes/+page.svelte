@@ -143,8 +143,19 @@
 						<h2 class="font-semibold text-xl mb-2">Gugut Podcast</h2>
 						<h3 class="text-base font-light">Producer and director</h3>
 					</div>
-					<div class="flex mt-6">
-						<span class="bg-[#CDF4EC] text-xl mr-1">Play.</span>
+					<div class="flex mt-4 items-center">
+						<a
+							href="https://youtube.com/gugutpodcast"
+							target="_blank"
+							title="Gugut Podcast youtube"
+						>
+							<span class="relative text-xl mr-1 group">
+								<span>Play.</span>
+								<span
+									class="bg-[#CDF4EC] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
+								/>
+							</span>
+						</a>
 						<PlaySquare />
 					</div>
 				</div>
@@ -164,8 +175,19 @@
 						<h2 class="font-semibold text-xl mb-2">Logo Designing</h2>
 						<h3 class="text-base font-light">I like to create logo from concepts</h3>
 					</div>
-					<div class="flex mt-6">
-						<span class="bg-[#CDF4EC] text-xl mr-1">Browse.</span>
+					<div class="flex mt-4 items-center">
+						<a
+							href="https://www.behance.net/biruktesfayeve"
+							target="_blank"
+							title="Behance logo collections"
+						>
+							<span class="relative text-xl mr-1 group">
+								<span>Browse.</span>
+								<span
+									class="bg-[#CDF4EC] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
+								/>
+							</span>
+						</a>
 						<Behance />
 					</div>
 				</div>
@@ -185,8 +207,19 @@
 						<h2 class="font-semibold text-xl mb-2">Biking</h2>
 						<h3 class="text-base font-light">This is my new hobby, Mountain Biking</h3>
 					</div>
-					<div class="flex mt-6">
-						<span class="bg-[#CDF4EC] text-xl mr-1">Strava.</span>
+					<div class="flex mt-4 items-center">
+						<a
+							href="https://www.strava.com/athletes/110356660"
+							target="_blank"
+							title="Join me on strava"
+						>
+							<span class="relative text-xl mr-1 group">
+								<span>Strava.</span>
+								<span
+									class="bg-[#CDF4EC] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
+								/>
+							</span>
+						</a>
 						<Strava />
 					</div>
 				</div>
@@ -254,13 +287,63 @@
 	</h3>
 
 	<div class="pt-6 flex flex-wrap gap-4">
-		<Gitlab />
-		<Github />
-		<BehanceSocial />
-		<Codepen />
-		<Linkedin />
-		<Instagram />
-		<Twitter />
+		<a
+			class="transition-transform duration-150 ease-linear hover:scale-110"
+			href="https://gitlab.com/biruktf"
+			target="_blank"
+			title="Gitlab"
+		>
+			<Gitlab />
+		</a>
+		<a
+			class="transition-transform duration-150 ease-linear hover:scale-110"
+			href="https://github.com/biruk-tesfaye"
+			target="_blank"
+			title="Github"
+		>
+			<Github />
+		</a>
+		<a
+			class="transition-transform duration-150 ease-linear hover:scale-110"
+			href="https://www.behance.net/biruktesfayeve"
+			target="blank"
+			title="Behance"
+		>
+			<BehanceSocial />
+		</a>
+
+		<a
+			class="transition-transform duration-150 ease-linear hover:scale-110"
+			href="https://codepen.io/biruktesfayeve"
+			target="_blank"
+			title="Codepen"
+		>
+			<Codepen />
+		</a>
+		<a
+			class="transition-transform duration-150 ease-linear hover:scale-110"
+			href="https://linkedin.com/in/biruktesfayeve"
+			target="_blank"
+			title="Linkedin"
+		>
+			<Linkedin />
+		</a>
+		<a
+			class="transition-transform duration-150 ease-linear hover:scale-110"
+			href="https://instagram.com/biruktesfayeve"
+			target="_blank"
+			title="Instagram"
+		>
+			<Instagram />
+		</a>
+		<a
+			class="transition-transform duration-150 ease-linear hover:scale-110"
+			href="https://twitter.com/biruktesfayeve"
+			target="_blank"
+			title="Twitter"
+		>
+			<Twitter />
+		</a>
 	</div>
 </div>
 
