@@ -10,7 +10,7 @@
 	<div
 		class="stair-div bg-[#F4FFF2]"
 		style="
-        position: fixed; 
+        position: absolute; 
         height: {height}px;
         width: 148px;
         z-index: {-index};

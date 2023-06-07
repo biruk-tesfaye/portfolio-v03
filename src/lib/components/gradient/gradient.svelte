@@ -4,8 +4,8 @@
 	export { className as class };
 </script>
 
-<div class="bg-blur absolute -z-10 {className}">
-	<div class="w-screen min-h-[1024px] relative bg-block">
+<div class=" max-w-full overflow-hidden bg-blur absolute -z-10 {className}">
+	<div class=" w-screen min-h-[1024px] relative bg-block">
 		<!-- circle -->
 		<div class="rounded-full w-[813px] h-[751px] absolute top-[159px] left-[371px] bg-[#F4FFF2]" />
 

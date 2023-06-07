@@ -37,86 +37,105 @@
 <div class="h-[1024px] w-full absolute top-0 left-0 -z-10">
 	<Gradient />
 
-	<Stair />
+	<div class="hidden md:block">
+		<Stair />
+	</div>
 </div>
 
-<div class="h-[1024px] w-full max-w-7xl relative pl-24 pt-44 flex flex-col justify-between">
+<div
+	class="h-auto min-h-[1024px] w-full mx-auto max-w-7xl relative px-8 pt-44 flex flex-col justify-between"
+>
 	<!-- hero section -->
-	<div class="max-w-2xl">
-		<h1 class="mb-11 text-2xl font-semibold leading-6 relative z-50 text-black/75">Hello, 👋</h1>
-
-		<div class="relative">
-			<div class="w-[233px] h-[202px] bg-[#F4FFF2]/50 absolute -top-14 -left-6" />
-		</div>
-
-		<div class="flex flex-col space-y-8 relative z-50">
-			<h1 class="text-5xl leading-[58px] font-extrabold text-black/80 flex flex-col">
-				<span class="inline-block">I'M A WEB</span>
-				<span class="inline-block">DEVELOPER AND</span>
-				<span class="inline-block">LOGO DESIGNER BASED</span>
-				<span class="inline-block">IN ADDIS ABABA, ETHIOPIA</span>
+	<div class="">
+		<div class="max-w-2xl">
+			<h1 class="mb-8 lg:mb-11 text-2xl font-semibold leading-6 relative z-50 text-black/75">
+				Hello, 👋
 			</h1>
 
-			<p class="text-black/70 m-0 text-lg leading-6">
-				Lorem ipsum dolor sit amet consectetur. Nulla amet consequat semper volutpat proin fusce
-				purus tristique. Velit urna cursus cursus vitae id. Eget sit turpis proin a sollicitudin
-				mollis nibh malesuada. Viverra lobortis eu bibendum velit orci lobortis facilisis. Ut at
-				tellus convallis mauris ipsum.
-			</p>
+			<div class="relative">
+				<div
+					class="w-48 h-[143px] md:w-[187px] md:h-[157px] lg:w-[233px] lg:h-[202px] bg-[#F4FFF2]/50 absolute -top-[43px] lg:-top-14 -left-6"
+				/>
+			</div>
 
-			<div>
-				<a href="mailto:biruktesfayeve@gmail.com" class="inline-block py-1 bg-[#F4FFF2]">
-					<button class=" text-[#1A1A1A] text-2xl leading-6 font-semibold align-middle">
-						Say hi. ✉️
-					</button>
-				</a>
+			<div class="flex flex-col space-y-8 relative z-50">
+				<h1
+					class="text-3xl leading-[40px] md:text-4xl md:leading-[46px] lg:text-5xl lg:leading-[58px] font-extrabold text-black/80 flex flex-col"
+				>
+					<span class="inline-block">I'M A WEB</span>
+					<span class="inline-block">DEVELOPER AND</span>
+					<span class="inline-block">LOGO DESIGNER BASED</span>
+					<span class="inline-block">IN ADDIS ABABA, ETHIOPIA</span>
+				</h1>
+
+				<p class="text-black/70 m-0 text-base md:text-lg leading-6">
+					Lorem ipsum dolor sit amet consectetur. Nulla amet consequat semper volutpat proin fusce
+					purus tristique. Velit urna cursus cursus vitae id. Eget sit turpis proin a sollicitudin
+					mollis nibh malesuada. Viverra lobortis eu bibendum velit orci lobortis facilisis. Ut at
+					tellus convallis mauris ipsum.
+				</p>
+
+				<div>
+					<a href="mailto:biruktesfayeve@gmail.com" class="inline-block py-1 bg-[#F4FFF2]">
+						<button
+							class=" text-[#1A1A1A] text-base md:text-2xl leading-6 font-semibold align-middle"
+						>
+							Say hi. ✉️
+						</button>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- logos -->
-	<div class="flex gap-8 items-center py-4">
-		<Svelte class="w-[159px] h-[39px]" />
-		<Tailwindcss class="w-[202px] h-[25px]" />
-		<Typescript class="w-[140px] h-[35px]" />
-		<Docker class="w-[146px] h-[37px]" />
-		<Nodejs class="w-[112px] h-[34px]" />
-		<Nextjs class="w-[92px] h-[92px]" />
-		<Illustrator class="w-16 h-16" />
+	<div class=" flex mt-32 sm:mt-16 md:mt-0 flex-wrap gap-8 items-center md:py-4">
+		<Svelte class="max-w-[159px] md:h-[39px] aspect-[calc(159/39)] h-auto" />
+		<Tailwindcss class="max-w-[202px] md:h-[25px] aspect-[calc(202/25)] h-auto" />
+		<Typescript class="max-w-[140px] md:h-[35px] aspect-[calc(140/35)] h-auto" />
+		<Docker class="max-w-[146px] md:h-[37px] aspect-[calc(146/37)] h-auto" />
+		<Nodejs class="max-w-[112px] md:h-[34px] aspect-[calc(112/34)] h-auto" />
+		<Nextjs class="max-w-[92px] md:h-[92px] aspect-[calc(92/92)] h-auto" />
+		<Illustrator class="max-w-16 md:h-16 aspect-[calc(64/64)] h-auto" />
 	</div>
 </div>
 
 <!-- Blog section -->
 
-<div class="pl-24 mt-36">
+<div class="mx-auto max-w-7xl px-8 mt-36">
 	<h2 class="font-semibold text-xl">Blog / Stories</h2>
 	<h3 class="text-base font-light">
 		Sharing stories and the <span class="bg-[#CDF4EC]">WEB</span>
 	</h3>
 
-	<div class="pt-16 pb-28">
-		<div class="flex gap-16">
-			<div class="w-[352px] h-[324px] shadow-blog-card" />
-			<div class="w-[352px] h-[324px] shadow-blog-card" />
-			<div class="w-[352px] h-[324px] shadow-blog-card" />
+	<div class="pt-16 pb-16 md:pb-28">
+		<div class="gap-8 lg:gap-16 grid md:grid-cols-2 lg:grid-cols-3 grid-auto-rows-min-content">
+			<div
+				class="w-full h-auto aspect-[calc(352/324)] md:max-w-[352px] md:h-[324px] shadow-blog-card"
+			/>
+			<div
+				class="w-full h-auto aspect-[calc(352/324)] md:max-w-[352px] md:h-[324px] shadow-blog-card"
+			/>
+			<div
+				class="w-full h-auto aspect-[calc(352/324)] md:max-w-[352px] md:h-[324px] shadow-blog-card"
+			/>
 		</div>
 	</div>
 </div>
 
 <!-- interest and hobbies -->
 
-<div class="pl-24 mt-36 pb-28">
+<div class="mx-auto max-w-7xl px-8 mt-36 pb-16 md:pb-28">
 	<h2 class="font-semibold text-xl mt-6">Interests / Hobbies</h2>
 	<h3 class="text-base font-light">
 		Things i do, when I’m not <span class="bg-[#CDF4EC]">coding</span>
 	</h3>
 
 	<div class="pt-16 pb-28">
-		<div class="flex gap-16">
+		<div class=" gap-12 lg:gap-16 grid md:grid-cols-2 lg:grid-cols-3 grid-auto-rows-min-content">
 			<!-- Gugut Podcast -->
-			<div class="w-[352px] flex flex-col gap-6">
+			<div class="w-full md:max-w-[352px] flex flex-col gap-6">
 				<img
-					class="shadow-blog-card"
+					class="shadow-blog-card aspect-[calc(352/324)] md:max-w-[352px] h-auto w-full"
 					src={GugutLogo}
 					alt="Gugut podcast logo"
 					width="352"
@@ -135,9 +154,9 @@
 			</div>
 
 			<!-- Logo Collection -->
-			<div class="w-[352px] flex flex-col gap-6">
+			<div class="w-full md:max-w-[352px] flex flex-col gap-6">
 				<img
-					class="shadow-blog-card"
+					class="shadow-blog-card aspect-[352/486] md:max-w-[352px] h-auto w-full"
 					src={LogoCollection}
 					alt="Gugut podcast logo"
 					width="352"
@@ -156,9 +175,9 @@
 			</div>
 
 			<!-- Biking -->
-			<div class="w-[352px] flex flex-col gap-6">
+			<div class="w-full mt-0 md:-mt-32 lg:mt-0 md:max-w-[352px] flex flex-col gap-6">
 				<img
-					class="shadow-blog-card"
+					class="shadow-blog-card aspect-[352/648] md:max-width-[352px] h-auto w-full"
 					src={Biking}
 					alt="Gugut podcast logo"
 					width="352"
@@ -166,8 +185,8 @@
 				/>
 				<div class="">
 					<div>
-						<h2 class="font-semibold text-xl mb-2">Logo Designing</h2>
-						<h3 class="text-base font-light">I like to create logo from concepts</h3>
+						<h2 class="font-semibold text-xl mb-2">Biking</h2>
+						<h3 class="text-base font-light">This is my new hobby, Mountain Biking</h3>
 					</div>
 					<div class="flex mt-6">
 						<span class="bg-[#CDF4EC] text-xl mr-1">Strava.</span>
@@ -181,13 +200,13 @@
 
 <!-- Experimental area -->
 
-<div class="pl-24 pt-6">
+<div class="mx-auto max-w-7xl px-8 pt-6">
 	<h2 class="font-semibold text-xl mt-6">Experiments / Playground</h2>
 	<h3 class="text-base font-light">
 		Trying new and experimental <span class="bg-[#CDF4EC]">things</span>
 	</h3>
 
-	<div class="pt-16 px-8">
+	<div class="pt-8 md:pt-16 md:px-8">
 		<div class="pb-8 flex snap-x overflow-x-scroll gap-32 container-snap">
 			<iframe
 				class="min-w-[900px] snap-start relative text-center"
@@ -225,12 +244,13 @@
 				<a href="https://codepen.io">CodePen</a>.
 			</iframe>
 		</div>
+		<p class="text-sm text-black/80">&#9432; Scroll horizontally</p>
 	</div>
 </div>
 
 <!-- Social links -->
 
-<div class="pl-24 mt-64">
+<div class="mx-auto max-w-7xl px-8 mt-64">
 	<h2 class="font-semibold text-xl mt-6">Links / Social</h2>
 	<h3 class="text-base font-light">
 		Where to find me <span class="bg-[#CDF4EC]">online</span>
@@ -249,9 +269,9 @@
 
 <!-- footer -->
 
-<div class="relative w-screen min-h-[1024px] overflow-hidden">
+<div class="relative max-w-full min-h-[1024px] overflow-hidden">
 	<Gradient />
-	<div class=" w-full h-[1024px] flex justify-center items-center">
+	<div class=" w-full h-[1024px] flex justify-center items-center px-8">
 		<p class="text-base">Designed on Figma Assembled in VS-Code with Sveltekit and tailwindcss</p>
 	</div>
 </div>
