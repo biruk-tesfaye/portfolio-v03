@@ -11,9 +11,9 @@
 	import Behance from '$lib/assets/icons/behance.svg.svelte';
 	import Strava from '$lib/assets/icons/strava.svg.svelte';
 
-	import GugutLogo from '$lib/assets/gugut-logo.png';
-	import LogoCollection from '$lib/assets/logo-collection.png';
-	import Biking from '$lib/assets/biking.png';
+	import GugutLogo from '$lib/assets/gugut-logo.png?w=352&format=webp&srcset';
+	import LogoCollection from '$lib/assets/logo-collection.png?w=352&format=webp&srcset';
+	import Biking from '$lib/assets/biking.png??w=352&format=webp&srcset';
 
 	import Github from '$lib/assets/icons/github.svg.svelte';
 	import Twitter from '$lib/assets/icons/twitter.svg.svelte';
@@ -156,7 +156,7 @@
 			<div class="w-full md:max-w-[352px] flex flex-col gap-6">
 				<img
 					class="shadow-blog-card aspect-[calc(352/324)] md:max-w-[352px] h-auto w-full"
-					src={GugutLogo}
+					srcSet={GugutLogo}
 					alt="Gugut podcast logo"
 					width="352"
 					height="324"
@@ -188,7 +188,7 @@
 			<div class="w-full md:max-w-[352px] flex flex-col gap-6">
 				<img
 					class="shadow-blog-card aspect-[352/486] md:max-w-[352px] h-auto w-full"
-					src={LogoCollection}
+					srcSet={LogoCollection}
 					alt="Gugut podcast logo"
 					width="352"
 					height="486"
@@ -220,7 +220,7 @@
 			<div class="w-full mt-0 md:-mt-32 lg:mt-0 md:max-w-[352px] flex flex-col gap-6">
 				<img
 					class="shadow-blog-card aspect-[352/648] md:max-width-[352px] h-auto w-full"
-					src={Biking}
+					srcSet={Biking}
 					alt="Gugut podcast logo"
 					width="352"
 					height="648"
