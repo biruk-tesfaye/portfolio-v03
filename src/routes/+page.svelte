@@ -78,10 +78,10 @@
 				</h1>
 
 				<p class="text-black/70 m-0 text-base md:text-lg leading-6">
-					Lorem ipsum dolor sit amet consectetur. Nulla amet consequat semper volutpat proin fusce
-					purus tristique. Velit urna cursus cursus vitae id. Eget sit turpis proin a sollicitudin
-					mollis nibh malesuada. Viverra lobortis eu bibendum velit orci lobortis facilisis. Ut at
-					tellus convallis mauris ipsum.
+					My name is Biruk and I am a web developer. I specialize in a variety of technologies,
+					including Svelte, Tailwindcss, Typescript, GraphQL, Node.js, and PostgreSQL. Over the
+					years, I have developed a strong background in freelancing online and working
+					collaboratively in teams to deliver high-quality products
 				</p>
 
 				<div>
