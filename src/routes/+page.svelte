@@ -32,6 +32,13 @@
 
 <svelte:window bind:scrollY={y} />
 
+<!-- add head for SEO -->
+
+<svelte:head>
+	<title>Home | Biruk H.</title>
+	<meta name="description" content="Biruk's personal website" />
+</svelte:head>
+
 <div class="h-[1024px] w-full absolute top-0 left-0 -z-10">
 	<Gradient />
 
@@ -43,7 +50,7 @@
 <div
 	class="h-auto min-h-[1024px] w-full mx-auto max-w-7xl relative px-8 pt-44 flex flex-col justify-between"
 >
-	<div class="flex items-center absolute right-0 -mt-36">
+	<div class="flex items-center absolute right-8 -mt-36">
 		<a
 			href="https://www.upwork.com/freelancers/~01b7a488ab48061c34"
 			target="_blank"
