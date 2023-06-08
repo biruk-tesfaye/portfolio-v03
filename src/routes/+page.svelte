@@ -7,32 +7,21 @@
 	import Tailwindcss from '$lib/assets/icons/tailwindcss.svg.svelte';
 	import Typescript from '$lib/assets/icons/typescript.svg.svelte';
 
-	import PlaySquare from '$lib/assets/icons/play-square.svg.svelte';
-	import Behance from '$lib/assets/icons/behance.svg.svelte';
-	import Strava from '$lib/assets/icons/strava.svg.svelte';
-
-	import GugutLogo from '$lib/assets/gugut-logo.png?w=352&format=webp&srcset';
-	import LogoCollection from '$lib/assets/logo-collection.png?w=352&format=webp&srcset';
-	import Biking from '$lib/assets/biking.png??w=352&format=webp&srcset';
-
-	import Github from '$lib/assets/icons/github.svg.svelte';
-	import Twitter from '$lib/assets/icons/twitter.svg.svelte';
-	import Linkedin from '$lib/assets/icons/linkedin.svg.svelte';
-	import Instagram from '$lib/assets/icons/instagram.svg.svelte';
-	import Codepen from '$lib/assets/icons/codepen.svg.svelte';
-	import BehanceSocial from '$lib/assets/icons/behance-social.svg.svelte';
-	import Gitlab from '$lib/assets/icons/gitlab.svg.svelte';
 	import Upwork from '$lib/assets/icons/upwork.svg.svelte';
 
 	import Gradient from '$lib/components/gradient/gradient.svelte';
 	import Stair from '$lib/components/stair.svelte';
 
+	import Footer from '$lib/components/footer/footer.svelte';
+	import SocialLinks from '$lib/components/social-links/social-links.svelte';
+	import ExperimentalArea from '$lib/components/experimental-area/experimental-area.svelte';
+	import Hobbies from '$lib/components/hobbies/hobbies.svelte';
+	import Blog from '$lib/components/blog/blog.svelte';
+
 	let y = 0;
 </script>
 
 <svelte:window bind:scrollY={y} />
-
-<!-- add head for SEO -->
 
 <svelte:head>
 	<title>Home | Biruk H.</title>
@@ -121,273 +110,18 @@
 
 <!-- Blog section -->
 
-<div class="mx-auto max-w-7xl px-8 mt-36">
-	<h2 class="font-semibold text-xl">Blog / Stories</h2>
-	<h3 class="text-base font-light">
-		Sharing stories and the <span class="bg-[#CDF4EC]">WEB</span>
-	</h3>
-
-	<div class="pt-16 pb-16 md:pb-28">
-		<div class="gap-8 lg:gap-16 grid md:grid-cols-2 lg:grid-cols-3 grid-auto-rows-min-content">
-			<div
-				class="w-full h-auto aspect-[calc(352/324)] md:max-w-[352px] md:h-[324px] shadow-blog-card"
-			/>
-			<div
-				class="w-full h-auto aspect-[calc(352/324)] md:max-w-[352px] md:h-[324px] shadow-blog-card"
-			/>
-			<div
-				class="w-full h-auto aspect-[calc(352/324)] md:max-w-[352px] md:h-[324px] shadow-blog-card"
-			/>
-		</div>
-	</div>
-</div>
+<Blog />
 
 <!-- interest and hobbies -->
-
-<div class="mx-auto max-w-7xl px-8 mt-36 pb-16 md:pb-28">
-	<h2 class="font-semibold text-xl mt-6">Interests / Hobbies</h2>
-	<h3 class="text-base font-light">
-		Things i do, when I’m not <span class="bg-[#CDF4EC]">coding</span>
-	</h3>
-
-	<div class="pt-16 pb-28">
-		<div class=" gap-12 lg:gap-16 grid md:grid-cols-2 lg:grid-cols-3 grid-auto-rows-min-content">
-			<!-- Gugut Podcast -->
-			<div class="w-full md:max-w-[352px] flex flex-col gap-6">
-				<img
-					class="shadow-blog-card aspect-[calc(352/324)] md:max-w-[352px] h-auto w-full"
-					srcSet={GugutLogo}
-					alt="Gugut podcast logo"
-					width="352"
-					height="324"
-				/>
-				<div class="">
-					<div>
-						<h2 class="font-semibold text-xl mb-2">Gugut Podcast</h2>
-						<h3 class="text-base font-light">Producer and director</h3>
-					</div>
-					<div class="flex mt-4 items-center">
-						<a
-							href="https://youtube.com/gugutpodcast"
-							target="_blank"
-							title="Gugut Podcast youtube"
-						>
-							<span class="relative text-xl mr-1 group">
-								<span>Play.</span>
-								<span
-									class="bg-[#CDF4EC] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
-								/>
-							</span>
-						</a>
-						<PlaySquare />
-					</div>
-				</div>
-			</div>
-
-			<!-- Logo Collection -->
-			<div class="w-full md:max-w-[352px] flex flex-col gap-6">
-				<img
-					class="shadow-blog-card aspect-[352/486] md:max-w-[352px] h-auto w-full"
-					srcSet={LogoCollection}
-					alt="Gugut podcast logo"
-					width="352"
-					height="486"
-				/>
-				<div class="">
-					<div>
-						<h2 class="font-semibold text-xl mb-2">Logo Designing</h2>
-						<h3 class="text-base font-light">I like to create logo from concepts</h3>
-					</div>
-					<div class="flex mt-4 items-center">
-						<a
-							href="https://www.behance.net/biruktesfayeve"
-							target="_blank"
-							title="Behance logo collections"
-						>
-							<span class="relative text-xl mr-1 group">
-								<span>Browse.</span>
-								<span
-									class="bg-[#CDF4EC] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
-								/>
-							</span>
-						</a>
-						<Behance />
-					</div>
-				</div>
-			</div>
-
-			<!-- Biking -->
-			<div class="w-full mt-0 md:-mt-32 lg:mt-0 md:max-w-[352px] flex flex-col gap-6">
-				<img
-					class="shadow-blog-card aspect-[352/648] md:max-width-[352px] h-auto w-full"
-					srcSet={Biking}
-					alt="Gugut podcast logo"
-					width="352"
-					height="648"
-				/>
-				<div class="">
-					<div>
-						<h2 class="font-semibold text-xl mb-2">Biking</h2>
-						<h3 class="text-base font-light">This is my new hobby, Mountain Biking</h3>
-					</div>
-					<div class="flex mt-4 items-center">
-						<a
-							href="https://www.strava.com/athletes/110356660"
-							target="_blank"
-							title="Join me on strava"
-						>
-							<span class="relative text-xl mr-1 group">
-								<span>Strava.</span>
-								<span
-									class="bg-[#CDF4EC] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
-								/>
-							</span>
-						</a>
-						<Strava />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<Hobbies />
 
 <!-- Experimental area -->
 
-<div class="mx-auto max-w-7xl px-8 pt-6">
-	<h2 class="font-semibold text-xl mt-6">Experiments / Playground</h2>
-	<h3 class="text-base font-light">
-		Trying new and experimental <span class="bg-[#CDF4EC]">things</span>
-	</h3>
-
-	<div class="pt-8 md:pt-16 md:px-8">
-		<div class="pb-8 flex snap-x overflow-x-scroll gap-32 container-snap">
-			<iframe
-				class="min-w-[900px] snap-start relative text-center"
-				height="452"
-				scrolling="no"
-				title="card &amp; color chooser with hover"
-				src="https://codepen.io/biruktesfayeve/embed/bmwWbx?default-tab=result&theme-id=dark"
-				frameborder="no"
-				loading="lazy"
-				allowtransparency={true}
-				allowfullscreen={true}
-			>
-				See the Pen <a href="https://codepen.io/biruktesfayeve/pen/bmwWbx">
-					card &amp; color chooser with hover</a
-				>
-				by Biruk Tesfaye (<a href="https://codepen.io/biruktesfayeve">@biruktesfayeve</a>) on
-				<a href="https://codepen.io">CodePen</a>.
-			</iframe>
-
-			<iframe
-				class="min-w-[900px]"
-				height="452"
-				scrolling="no"
-				title="Envelope : send a package to your customers 😋😜"
-				src="https://codepen.io/biruktesfayeve/embed/JwQYVd?default-tab=result&theme-id=dark"
-				frameborder="no"
-				loading="lazy"
-				allowtransparency={true}
-				allowfullscreen={true}
-			>
-				See the Pen <a href="https://codepen.io/biruktesfayeve/pen/JwQYVd">
-					Envelope : send a package to your customers 😋😜</a
-				>
-				by Biruk Tesfaye (<a href="https://codepen.io/biruktesfayeve">@biruktesfayeve</a>) on
-				<a href="https://codepen.io">CodePen</a>.
-			</iframe>
-		</div>
-		<p class="text-sm text-black/80">&#9432; Scroll horizontally</p>
-	</div>
-</div>
+<ExperimentalArea />
 
 <!-- Social links -->
 
-<div class="mx-auto max-w-7xl px-8 mt-64">
-	<h2 class="font-semibold text-xl mt-6">Links / Social</h2>
-	<h3 class="text-base font-light">
-		Where to find me <span class="bg-[#CDF4EC]">online</span>
-	</h3>
-
-	<div class="pt-6 flex flex-wrap gap-4">
-		<a
-			class="transition-transform duration-150 ease-linear hover:scale-110"
-			href="https://gitlab.com/biruktf"
-			target="_blank"
-			title="Gitlab"
-		>
-			<Gitlab />
-		</a>
-		<a
-			class="transition-transform duration-150 ease-linear hover:scale-110"
-			href="https://github.com/biruk-tesfaye"
-			target="_blank"
-			title="Github"
-		>
-			<Github />
-		</a>
-		<a
-			class="transition-transform duration-150 ease-linear hover:scale-110"
-			href="https://www.behance.net/biruktesfayeve"
-			target="blank"
-			title="Behance"
-		>
-			<BehanceSocial />
-		</a>
-
-		<a
-			class="transition-transform duration-150 ease-linear hover:scale-110"
-			href="https://codepen.io/biruktesfayeve"
-			target="_blank"
-			title="Codepen"
-		>
-			<Codepen />
-		</a>
-		<a
-			class="transition-transform duration-150 ease-linear hover:scale-110"
-			href="https://linkedin.com/in/biruktesfayeve"
-			target="_blank"
-			title="Linkedin"
-		>
-			<Linkedin />
-		</a>
-		<a
-			class="transition-transform duration-150 ease-linear hover:scale-110"
-			href="https://instagram.com/biruktesfayeve"
-			target="_blank"
-			title="Instagram"
-		>
-			<Instagram />
-		</a>
-		<a
-			class="transition-transform duration-150 ease-linear hover:scale-110"
-			href="https://twitter.com/biruktesfayeve"
-			target="_blank"
-			title="Twitter"
-		>
-			<Twitter />
-		</a>
-	</div>
-</div>
+<SocialLinks />
 
 <!-- footer -->
-
-<div class=" max-w-full h-[1024px]">
-	<Gradient />
-	<div class=" w-full h-[1024px] flex justify-center items-center px-8">
-		<p class="text-base">Designed on Figma Assembled in VS-Code with Sveltekit and tailwindcss</p>
-	</div>
-</div>
-
-<style>
-	/* Hide scrollbar for Chrome, Safari and Opera */
-	.container-snap::-webkit-scrollbar {
-		display: none;
-	}
-
-	/* Hide scrollbar for IE, Edge and Firefox */
-	.container-snap {
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-</style>
+<Footer />
