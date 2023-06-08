@@ -22,6 +22,7 @@
 	import Codepen from '$lib/assets/icons/codepen.svg.svelte';
 	import BehanceSocial from '$lib/assets/icons/behance-social.svg.svelte';
 	import Gitlab from '$lib/assets/icons/gitlab.svg.svelte';
+	import Upwork from '$lib/assets/icons/upwork.svg.svelte';
 
 	import Gradient from '$lib/components/gradient/gradient.svelte';
 	import Stair from '$lib/components/stair.svelte';
@@ -42,6 +43,21 @@
 <div
 	class="h-auto min-h-[1024px] w-full mx-auto max-w-7xl relative px-8 pt-44 flex flex-col justify-between"
 >
+	<div class="flex items-center absolute right-0 -mt-36">
+		<a
+			href="https://www.upwork.com/freelancers/~01b7a488ab48061c34"
+			target="_blank"
+			title="Lets work together!"
+		>
+			<span class="relative text-xl mr-1 group">
+				<span>Hire me.</span>
+				<span
+					class="bg-[#41FF8D] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
+				/>
+			</span>
+		</a>
+		<Upwork />
+	</div>
 	<!-- hero section -->
 	<div class="">
 		<div class="max-w-2xl">
