@@ -39,7 +39,7 @@
 							<span class="relative text-xl mr-1 group">
 								<span>Play.</span>
 								<span
-									class="bg-[#CDF4EC] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
+									class="bg-[#CDF4EC] transition-[height] absolute w-full group-hover:h-full bottom-0 left-0 -z-10 h-[11px]"
 								/>
 							</span>
 						</a>
@@ -71,7 +71,7 @@
 							<span class="relative text-xl mr-1 group">
 								<span>Browse.</span>
 								<span
-									class="bg-[#CDF4EC] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
+									class="bg-[#CDF4EC] transition-[height] absolute w-full group-hover:h-full bottom-0 left-0 -z-10 h-[11px]"
 								/>
 							</span>
 						</a>
@@ -103,7 +103,7 @@
 							<span class="relative text-xl mr-1 group">
 								<span>Strava.</span>
 								<span
-									class="bg-[#CDF4EC] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
+									class="bg-[#CDF4EC] transition-[height] absolute w-full group-hover:h-full bottom-0 left-0 -z-10 h-[11px]"
 								/>
 							</span>
 						</a>

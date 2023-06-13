@@ -48,7 +48,7 @@
 			<span class="relative text-xl mr-1 group">
 				<span>Hire me.</span>
 				<span
-					class="bg-[#41FF8D] transition-[height] absolute w-full h-full bottom-0 left-0 -z-10 group-hover:h-[11px]"
+					class="bg-[#41FF8D] transition-[height] absolute w-full group-hover:h-full bottom-0 left-0 -z-10 h-[11px]"
 				/>
 			</span>
 		</a>
@@ -85,9 +85,12 @@
 				</p>
 
 				<div>
-					<a href="mailto:biruktesfayeve@gmail.com" class="inline-block py-1 bg-[#F4FFF2]">
+					<a
+						href="mailto:biruktesfayeve@gmail.com"
+						class="transition-transform duration-150 hover:scale-95 inline-block py-1 bg-[#F4FFF2]"
+					>
 						<button
-							class=" text-[#1A1A1A] text-base md:text-2xl leading-6 font-semibold align-middle"
+							class="  text-[#1A1A1A] text-base md:text-2xl leading-6 font-semibold align-middle"
 						>
 							Say hi. ✉️
 						</button>
