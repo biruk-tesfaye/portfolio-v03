@@ -56,14 +56,7 @@
 		>
 			<Linkedin />
 		</a>
-		<a
-			class="transition-transform duration-150 ease-linear hover:scale-110"
-			href="https://instagram.com/biruktesfayeve"
-			target="_blank"
-			title="Instagram"
-		>
-			<Instagram />
-		</a>
+
 		<a
 			class="transition-transform duration-150 ease-linear hover:scale-110"
 			href="https://twitter.com/biruktesfayeve"
@@ -71,6 +64,14 @@
 			title="Twitter"
 		>
 			<Twitter />
+		</a>
+		<a
+			class="transition-transform duration-150 ease-linear hover:scale-110"
+			href="https://instagram.com/biruktesfayeve"
+			target="_blank"
+			title="Instagram"
+		>
+			<Instagram />
 		</a>
 	</div>
 </div>
